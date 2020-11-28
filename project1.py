@@ -21,7 +21,7 @@ def func1(mov1, mov2, mov3, inf1=0, inf2=0, inf3=0, num1=1):
     """ Let's get started """
     inf1 = ("Alive is a good movie created by...")
     inf2 = ("Frozen by Disney")
-    inf3 = ("Iron mask super hero")
+    inf3 = ("Iron mask")
     print("Today we have a movies for you !")
     print("Here a list of movies we have today :D")
     print(mov1, mov2, mov3, sep="\n")
