@@ -68,7 +68,7 @@ def func2(mov1, mov2, mov3, inf1, inf2, inf3, num1=1):
             print("---------------------------------")
             func1(mov1, mov2, mov3)
     elif num1 == 2:
-        print("Okay you choose [%s]" % mov1)
+        print("Okay you choose [%s]" % mov2)
         strcor1 = str(
             input("Right? [Press 'Y' to confirm, 'I' to see detail or 'N' to change]"))
         if strcor1 == 'Y' or strcor1 == 'y':
