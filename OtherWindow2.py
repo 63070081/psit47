@@ -19,31 +19,41 @@ class Ui_OtherWindow2(object):
         self.window.show()
     def setupUi(self, OtherWindow2):
         OtherWindow2.setObjectName("OtherWindow2")
-        OtherWindow2.resize(715, 297)
+        OtherWindow2.resize(717, 297)
         self.centralwidget = QtWidgets.QWidget(OtherWindow2)
         self.centralwidget.setObjectName("centralwidget")
-
         self.K12 = QtWidgets.QPushButton(self.centralwidget)
         self.K12.setGeometry(QtCore.QRect(50, 170, 291, 51))
         self.K12.setObjectName("K12")
         self.K12.clicked.connect(self.openseat)
 
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(330, 120, 71, 20))
+        self.label.setGeometry(QtCore.QRect(300, 100, 151, 41))
         self.label.setObjectName("label")
-
-        self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)
-        self.textBrowser.setGeometry(QtCore.QRect(160, 20, 401, 71))
-        self.textBrowser.setObjectName("textBrowser")
-
         self.K15 = QtWidgets.QPushButton(self.centralwidget)
         self.K15.setGeometry(QtCore.QRect(390, 170, 291, 51))
         self.K15.setObjectName("K15")
         self.K15.clicked.connect(self.openseat)
 
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(180, 10, 411, 61))
+        self.label_3.setAcceptDrops(False)
+        self.label_3.setAutoFillBackground(False)
+        self.label_3.setObjectName("label_3")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(0, 0, 721, 251))
+        self.label_2.setText("")
+        self.label_2.setPixmap(QtGui.QPixmap("kimetsu no.jpg"))
+        self.label_2.setScaledContents(True)
+        self.label_2.setObjectName("label_2")
+        self.label_2.raise_()
+        self.K12.raise_()
+        self.label.raise_()
+        self.K15.raise_()
+        self.label_3.raise_()
         OtherWindow2.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(OtherWindow2)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 715, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 717, 26))
         self.menubar.setObjectName("menubar")
         OtherWindow2.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(OtherWindow2)
@@ -57,13 +67,9 @@ class Ui_OtherWindow2(object):
         _translate = QtCore.QCoreApplication.translate
         OtherWindow2.setWindowTitle(_translate("OtherWindow2", "MainWindow"))
         self.K12.setText(_translate("OtherWindow2", "12.00"))
-        self.label.setText(_translate("OtherWindow2", "13/12/2020"))
-        self.textBrowser.setHtml(_translate("OtherWindow2", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:28pt;\">Kimetsu no yaiba</span></p></body></html>"))
+        self.label.setText(_translate("OtherWindow2", "<html><head/><body><p><span style=\" font-size:16pt; color:#55aaff;\">16/12/2020</span></p></body></html>"))
         self.K15.setText(_translate("OtherWindow2", "15.00"))
+        self.label_3.setText(_translate("OtherWindow2", "<html><head/><body><p align=\"center\"><span style=\" font-size:28pt; font-weight:600; color:#55aaff;\">Kimetsu no yaiba</span></p></body></html>"))
 
 
 if __name__ == "__main__":
