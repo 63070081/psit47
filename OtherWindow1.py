@@ -28,18 +28,27 @@ class Ui_OtherWindow1(object):
         self.I9.clicked.connect(self.openseat)
 
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(320, 110, 71, 20))
+        self.label.setGeometry(QtCore.QRect(270, 110, 161, 41))
         self.label.setObjectName("label")
-
-        self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)
-        self.textBrowser.setGeometry(QtCore.QRect(200, 10, 301, 71))
-        self.textBrowser.setObjectName("textBrowser")
-
         self.I13 = QtWidgets.QPushButton(self.centralwidget)
         self.I13.setGeometry(QtCore.QRect(380, 160, 291, 51))
         self.I13.setObjectName("I13")
         self.I13.clicked.connect(self.openseat)
 
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(0, 0, 711, 251))
+        self.label_2.setText("")
+        self.label_2.setPixmap(QtGui.QPixmap("Iron man.jpg"))
+        self.label_2.setScaledContents(True)
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(240, 10, 231, 71))
+        self.label_3.setObjectName("label_3")
+        self.label_2.raise_()
+        self.I9.raise_()
+        self.label.raise_()
+        self.I13.raise_()
+        self.label_3.raise_()
         OtherWindow1.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(OtherWindow1)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 712, 26))
@@ -56,13 +65,9 @@ class Ui_OtherWindow1(object):
         _translate = QtCore.QCoreApplication.translate
         OtherWindow1.setWindowTitle(_translate("OtherWindow1", "MainWindow"))
         self.I9.setText(_translate("OtherWindow1", "9.00"))
-        self.label.setText(_translate("OtherWindow1", "13/12/2020"))
-        self.textBrowser.setHtml(_translate("OtherWindow1", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:28pt;\">Iron man</span></p></body></html>"))
+        self.label.setText(_translate("OtherWindow1", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; color:#fd0000;\">16/12/2020</span></p></body></html>"))
         self.I13.setText(_translate("OtherWindow1", "13.00"))
+        self.label_3.setText(_translate("OtherWindow1", "<html><head/><body><p align=\"center\"><span style=\" font-size:28pt; font-weight:600; color:#ff0000;\">Iron man</span></p></body></html>"))
 
 
 if __name__ == "__main__":
