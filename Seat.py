@@ -9,9 +9,14 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+from Result import Ui_Result
 
 class Ui_Seat(object):
+    def OpenResult(self):
+        self.window = QtWidgets.QMainWindow()
+        self.ui = Ui_Result()
+        self.ui.setupUi(self.window)
+        self.window.show()
     def buttonClicked1(self):
         self.A1.setEnabled(0)
     def buttonClicked2(self):
@@ -60,7 +65,6 @@ class Ui_Seat(object):
         self.E5.setEnabled(0)
     def buttonClicked24(self):
         self.E6.setEnabled(0)
-        
     def setupUi(self, Seat):
         Seat.setObjectName("Seat")
         Seat.resize(800, 496)
@@ -192,7 +196,41 @@ class Ui_Seat(object):
         self.Next = QtWidgets.QPushButton(self.centralwidget)
         self.Next.setGeometry(QtCore.QRect(350, 400, 101, 31))
         self.Next.setObjectName("Next")
-
+        self.Next.clicked.connect(self.OpenResult)
+        
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(0, 0, 801, 451))
+        self.label.setText("")
+        self.label.setPixmap(QtGui.QPixmap("seat.jpg"))
+        self.label.setScaledContents(True)
+        self.label.setObjectName("label")
+        self.label.raise_()
+        self.textBrowser.raise_()
+        self.A1.raise_()
+        self.A2.raise_()
+        self.A3.raise_()
+        self.A4.raise_()
+        self.A5.raise_()
+        self.A6.raise_()
+        self.B6.raise_()
+        self.B5.raise_()
+        self.B2.raise_()
+        self.B3.raise_()
+        self.B4.raise_()
+        self.B1.raise_()
+        self.E1.raise_()
+        self.D5.raise_()
+        self.D2.raise_()
+        self.E2.raise_()
+        self.D3.raise_()
+        self.E3.raise_()
+        self.D4.raise_()
+        self.D1.raise_()
+        self.E6.raise_()
+        self.E4.raise_()
+        self.D6.raise_()
+        self.E5.raise_()
+        self.Next.raise_()
         Seat.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(Seat)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 800, 26))
