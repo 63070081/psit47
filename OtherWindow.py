@@ -19,31 +19,39 @@ class Ui_OtherWindow(object):
         self.window.show()
     def setupUi(self, OtherWindow):
         OtherWindow.setObjectName("OtherWindow")
-        OtherWindow.resize(715, 296)
+        OtherWindow.resize(716, 296)
         self.centralwidget = QtWidgets.QWidget(OtherWindow)
         self.centralwidget.setObjectName("centralwidget")
-
         self.F14 = QtWidgets.QPushButton(self.centralwidget)
         self.F14.setGeometry(QtCore.QRect(390, 160, 291, 51))
         self.F14.setObjectName("F14")
         self.F14.clicked.connect(self.openseat)
 
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(330, 110, 71, 20))
+        self.label.setGeometry(QtCore.QRect(290, 120, 161, 31))
         self.label.setObjectName("label")
-
-        self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)
-        self.textBrowser.setGeometry(QtCore.QRect(210, 10, 301, 71))
-        self.textBrowser.setObjectName("textBrowser")
-
         self.F11 = QtWidgets.QPushButton(self.centralwidget)
         self.F11.setGeometry(QtCore.QRect(50, 160, 291, 51))
         self.F11.setObjectName("F11")
         self.F11.clicked.connect(self.openseat)
 
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(0, 0, 721, 261))
+        self.label_2.setText("")
+        self.label_2.setPixmap(QtGui.QPixmap("frozen.jpeg"))
+        self.label_2.setScaledContents(True)
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(250, 20, 231, 61))
+        self.label_3.setObjectName("label_3")
+        self.label_2.raise_()
+        self.F14.raise_()
+        self.label.raise_()
+        self.F11.raise_()
+        self.label_3.raise_()
         OtherWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(OtherWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 715, 26))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 716, 26))
         self.menubar.setObjectName("menubar")
         OtherWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(OtherWindow)
@@ -57,13 +65,9 @@ class Ui_OtherWindow(object):
         _translate = QtCore.QCoreApplication.translate
         OtherWindow.setWindowTitle(_translate("OtherWindow", "MainWindow"))
         self.F14.setText(_translate("OtherWindow", "14.00"))
-        self.label.setText(_translate("OtherWindow", "13/12/2020"))
-        self.textBrowser.setHtml(_translate("OtherWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
-"<p align=\"center\" style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:24pt;\">Frozen</span></p></body></html>"))
+        self.label.setText(_translate("OtherWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:16pt; color:#5555ff;\">16/12/2020</span></p></body></html>"))
         self.F11.setText(_translate("OtherWindow", "11.00"))
+        self.label_3.setText(_translate("OtherWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:28pt; font-weight:600; color:#5555ff;\">Frozen</span></p></body></html>"))
 
 
 if __name__ == "__main__":
